@@ -12,12 +12,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 <body>
+    <div class="main-contenu">
     <header>
         <nav>
             <img src="assets/images/logo/Logo.png" alt="Logo Booki">
             <div class="liens">
                 <a class="lien1" href="#hébergements">Hébergements</a>
-                <a href="#activités">Activités</a>
+                <a class="lien2" href="#activités">Activités</a>
             </div>  
         </nav>
 
@@ -25,8 +26,10 @@
     
     <main>
         <div class="présentation">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h4>En plein centre-ville ou en pleine nature</h4>
+            <div class="présentation1">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
             <form class="recherche">
                 <i class="fa-solid fa-location-dot"></i>
                 <textarea id="mon-texte" name="monTexte" rows="1" cols="20" placeholder="Marseille, France"></textarea>
@@ -35,14 +38,20 @@
             
             <div class="boutons">
                 <ul>
-                    <h2>Filtres</h2>
-                    <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
-                    <li><i class="fa-solid fa-person"></i>Familial</li>
-                    <li><i class="fa-solid fa-heart"></i>Romantique</li>
-                    <li><i class="fa-solid fa-fire"></i>Nos pépites</li>
+                    <div class="titre">
+                        <h2>Filtres</h2>
+                    </div>
+                    <div class="boutons-logo">
+                        <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
+                        <li><i class="fa-solid fa-person"></i>Familial</li>
+                        <li><i class="fa-solid fa-heart"></i>Romantique</li>
+                        <li><i class="fa-solid fa-fire"></i>Nos pépites</li>
+                    </div>
                 </ul>
             </div>
-            <p><i class="fa-solid fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="information">
+                <p><i class="fa-solid fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </div>
 
         <div class="hébergements-et-populaires">
@@ -57,11 +66,11 @@
                                 <h4>Nuit à partir de 52€</h4>
                             </div>
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>
                     </article>
@@ -73,11 +82,11 @@
                                 <h4>Nuit à partir de 96€</h4>
                             </div>
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div> 
                     </article>    
@@ -89,11 +98,11 @@
                                 <h4>Nuit à partir de 76€</h4>
                             </div>
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>   
                     </article>
@@ -105,11 +114,11 @@
                                 <h4>Nuit à partir de 46€</h4>
                             </div>    
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>        
                     </article>  
@@ -121,11 +130,11 @@
                                 <h4>Nuit à partir de 25€</h4>
                             </div>    
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>        
                     </article>
@@ -137,11 +146,11 @@
                                 <h4>Nuit à partir de 23€</h4>  
                             </div>
                             <div class="carte-étoile">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-sm fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>        
                     </article>
@@ -164,7 +173,7 @@
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>   
                     </article>
@@ -180,7 +189,7 @@
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>   
                     </article>
@@ -196,7 +205,7 @@
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                 <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <!-- <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> -->
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                             </div>
                         </div>   
                     </article>
@@ -254,5 +263,6 @@
             </ul>
         </div>
     </footer>
+    </div>
 </body>
 </html>
