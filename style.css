@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 18px;
 }
 
 h3 {
@@ -70,15 +70,15 @@ nav a {
     padding-top: 20px;
 }
 
-/******** main ********/
+/******** Main ********/
 
-/******** présentation ********/
+/******** Présentation ********/
 
 .présentation p {
     margin-top: 5px;
 }
 
-/******** barre de recherche ********/
+/******** Barre de recherche ********/
 .recherche {
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@ nav a {
     margin: 0;
 }
 
-/******** filtre ********/
+/******** Filtre ********/
 .boutons ul {
     display: flex;
     align-items: center;
@@ -171,7 +171,7 @@ nav a {
     cursor: pointer;
 }
 
-/******** logo information ********/
+/******** Logo information ********/
 .fa-info {
     color: #0065FC;
     border: 1px solid  #a7a7a7;
@@ -393,18 +393,13 @@ footer li {
     font-size: 16px;
 }
 
-footer h2 {
-    font-size: 18px;
-}
-
-/* Styles pour le contenu principal du site quand la largeur d'écran est supérieure à 1440px
-@media screen and (min-width: 1441px) {
-    body {
-        max-width: 1440px;
-    }
-} */
-
+/******** Ecran tablette ********/
 @media (max-width: 1024px) {
+
+    /* Main */
+
+    /* Filtre */
+
     .boutons i {
         font-size: 16px;
     }
@@ -412,14 +407,20 @@ footer h2 {
     .boutons ul {
         display: block;
     }
+
+    /* Hébergements et populaires */
     
     .hébergements-et-populaires {
         flex-direction: column;
     }
 
+    /* Hébergements */
+
     .hébergements {
         width: 100%;
     }
+
+    /* Populaires */
 
     .populaires {
         width: 100%;
@@ -436,27 +437,24 @@ footer h2 {
         width: 30%;
     }
 
-    h3 {
-        font-size: 16px;
-    }
-
     .populaires-cartes .carte h4 {
         font-size: 14px;
     }
 
+    /* Activités */
+
     .carte2 img {
         height: 200px;
     }
-
-    footer li {
-        font-size: 16px;
-    }
 }
 
+/******** Ecran téléphone ********/
 @media (max-width: 768px) {
     .main-contenu {
         padding: 0;
     }
+
+    /* Header */
 
     nav {
         display: flex;
@@ -480,9 +478,13 @@ footer h2 {
         padding-bottom: 20px;
     }
 
+    /* Main */
+
     .présentation1 {
         margin-left: 10px;
     }
+
+    /* Barre de recherche */
 
     .recherche {
         justify-content: center;
@@ -495,6 +497,8 @@ footer h2 {
     .recherche .fa-magnifying-glass {
         display: block;
     }
+
+    /* Filtre */
 
     .boutons .titre {
         margin-left: 10px;
@@ -513,10 +517,14 @@ footer h2 {
         margin-right: 0px;
     }
 
+    /* Logo information */
+
     .information {
         display: flex;
         margin-left: 10px;
     }
+
+    /* Hébergements et populaires */
 
     .hébergements-et-populaires {
         flex-direction: column-reverse;
@@ -526,6 +534,8 @@ footer h2 {
         border-radius: 0;
         /* background: none; */
     }
+
+    /* Populaires */
 
     .populaires {
         background-color:#F2F2F2;
@@ -541,6 +551,8 @@ footer h2 {
         margin-top: 15px;
     }
 
+    /* Hébergements */
+
     .hébergements {
         background-color: white;
     }
@@ -553,6 +565,8 @@ footer h2 {
         width: auto;
         margin-top: 15px;
     }
+
+    /* Activités */
 
     .activités-cartes {
         flex-direction: column;
@@ -567,6 +581,8 @@ footer h2 {
     .carte2 img {
         height: 141px;
     }
+
+    /* Footer */
 
     footer {
         flex-direction: column;
