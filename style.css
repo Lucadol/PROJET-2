@@ -40,8 +40,6 @@ h4 {
 h5 {
     font-weight:500;
     font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 /******** Header ********/
@@ -67,12 +65,19 @@ nav img {
 nav a {
     margin-left: 80px;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.lien1 {
+.lien1,
+.lien2 {
+    padding-top: 20px;
+}
+
+.lien1:hover, 
+.lien2:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    padding-top: 18px;
 }
 
 /******** Main ********/
@@ -111,7 +116,7 @@ nav a {
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
-    padding: 17px;
+    padding: 16px;
     overflow-y: hidden;
 }
 
@@ -135,8 +140,8 @@ nav a {
     display: none;
     background-color: #0065FC;
     color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
     padding: 19px 18px;
     margin: 0;
 }
@@ -160,11 +165,12 @@ nav a {
 
 .boutons-logo ul {
     display: flex;
+    margin: 0;
 }
 
 .boutons li {
-    border: 2px solid #e4e3e3;
-    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
     padding: 15px 20px;
     margin-right: 20px;
     font-weight: 700;
@@ -179,7 +185,7 @@ nav a {
 /******** Logo information ********/
 .fa-info {
     color: #0065FC;
-    border: 1px solid  #a7a7a7;
+    border: 1px solid  #F2F2F2;
     border-radius: 50%;
     padding: 10px 8px;
     margin-right: 15px;
@@ -188,8 +194,8 @@ nav a {
 .information {
     display: flex;
     align-items: baseline;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 
@@ -268,16 +274,17 @@ nav a {
 
 .hébergements-cartes h4 {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 .hébergements-cartes h5 {
-    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 0;
 }
 
 .hébergements-cartes .carte-étoile {
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .hébergements-cartes .fa-star {
@@ -364,8 +371,12 @@ nav a {
     border-top-right-radius: 20px;
 }
 
-.carte2 h3 {
+.carte2 h4 {
+    display: flex;
+    margin: 0;
     padding-left: 15px;
+    height: 59px;
+    align-items: center;
 } 
 
 .activités-cartes {
@@ -379,7 +390,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 footer div {
@@ -410,12 +421,17 @@ footer li {
         align-items: flex-start;
     }
 
-    .boutons i {
-        font-size: 16px;
+    .boutons h3 {
+        margin-top: 0;
     }
 
     .boutons ul {
         padding: 0;
+    }
+
+    .boutons li {
+        font-size: 16px;
+        padding: 15px 14px;
     }
 
     /* Hébergements et populaires */
@@ -456,6 +472,10 @@ footer li {
     .carte2 img {
         height: 200px;
     }
+
+    .carte2 h4 {
+        height: 70px;
+    }
 }
 
 /******** Ecran téléphone ********/
@@ -477,31 +497,52 @@ footer li {
        margin-right: 40px;
     }
 
-    .lien1 {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
+    nav img {
         padding-bottom: 20px;
     }
 
+    .liens {
+        width: 100%;
+    }
+
+    .lien1,
     .lien2 {
-        border-bottom: 2px solid #a7a7a7;
-        padding-bottom: 20px;
+        width: 50%;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .lien1:hover,
+    .lien2:hover {
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15px;
+        border-top: none;
     }
 
     /* Main */
 
     .présentation1 {
-        margin-left: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /* Barre de recherche */
 
     .recherche {
         justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .recherche p {
         display: none;
+    }
+
+    .recherche textarea {
+        width: 70%;
+        margin-right: -15px;
     }
 
     .recherche .fa-magnifying-glass {
@@ -511,16 +552,16 @@ footer li {
     /* Filtre */
 
     .boutons .titre {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .boutons-logo {
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .boutons-logo ul {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -532,11 +573,16 @@ footer li {
         margin-right: 0px;
     }
 
+    .boutons i {
+        padding-right: 3%;
+    }
+
     /* Logo information */
 
     .information {
         display: flex;
-        margin-left: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /* Hébergements et populaires */
@@ -595,6 +641,10 @@ footer li {
 
     .carte2 img {
         height: 141px;
+    }
+
+    .carte2 h4 {
+        height: 59px;
     }
 
     /* Footer */
