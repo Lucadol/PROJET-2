@@ -544,6 +544,7 @@ footer li {
     .recherche textarea {
         width: 70%;
         margin-right: -15px;
+        padding : 16px 12px;
     }
 
     .recherche .fa-magnifying-glass {
