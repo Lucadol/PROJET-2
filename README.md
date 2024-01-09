@@ -3,7 +3,7 @@
 
 ![Projet 2](https://github.com/Lucadol/Projet-2/assets/130574901/5a7919e6-cd59-472c-a4d5-3b45e405a9db)
 
-site link : https://lucadol.github.io/Projet-2/
+site link : [https://lucadol.github.io/Projet-2/](https://lucadol.github.io/Projet-2-OC/)
 
 ### Compétences évaluées
 * Implémenter une interface responsive avec HTML et CSS
